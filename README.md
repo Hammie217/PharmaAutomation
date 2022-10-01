@@ -1,17 +1,17 @@
 # Pharma Automation
 
 ## Pharmaceutical requirements
-Audit Trail
-Electronic Signatures
-Batch Reports
-Access management
+### Audit Trail
+### Electronic Signatures
+### Batch Reports
+### Access management
 
 ## Common implementation tools
-PM-Quality 
-OPC UA
-ASI interfact
-IO-Link
-Pack-ML
+### PM-Quality 
+### OPC UA
+### ASI interfact
+### IO-Link
+### Pack-ML
 ### Active Directory
 Windows Active Directory (AD) is a great tool for access management that allows machine builders to use a companies domain. In many industries, especially the pharmaceutical it is common to have two ADs, one for corporate systems such as your laptop used for emails and another for automation equpment on the shop floor known as Operational Technology (OT). An AD allows for centralised credential management and access management along with many other things less important to machine building. The active directory is built in a folder like structure breaking objects down using Organisational Units (OUs) similar to folders on a computer. 
 - Credential management: One of the many types of objects stored in an AD is a User, a user object can, and almost certainly will, contain many attributes but the two most important are the Common Name (CN) and userPassword containing a users username and password respectively for authentication. It is worth noting that the userPassword is required to be hashed and is impossible to read the contents externally, this can only be pushed to the AD and should be managed through existing corporate systems. A CN with its OU path is called a Distinguised Name (DN) which is useful for large ADs as a user can be found by following the DN path rather than searching throughout the whole AD.
